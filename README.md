@@ -1,1 +1,1 @@
-# kornilova.it..github.io
+# kornilova.it.github.io
