@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Ключевые слова для поиска">
+	<meta name="desccriotion" content="Описание моей страницы">
+	<link rel="icon" type="image/png" href="icon.png">
+	<title>HTML формы</title>
+</head>
+<body>
+	<form>
+		<p align="center"><b>С чего началось твоё утро?</b></p>
+		<p align="center">
+			<input type="checkbox" name="option1" value="a1">Смотрю Ютуб<br>
+			<input type="checkbox" name="option2" value="a2">Принимаю душ<br>
+			<input type="checkbox" name="option3" value="a3">Занимаюсь спортом<br>
+			<input type="checkbox" name="option4" value="a4">Кушаю<br>
+			<input type="checkbox" name="option5" value="a5" checked>Гуляю с собакой<br> 
+		</p>
+		<p align="center">
+			<input type="submit" value="Отправить">
+		</p>
+		
+		<input type="color" name="bg" value="#000"><br>
+		<input type="month" id="start" name="start" min="2021-03" value="2022-05"><br>
+		<input type="date" id="birthday" name="birthday" value="1900-01-01" min="1930-01-01" max="2003-01-01"><br>
+		<input type="datetime-local"><br>
+		<input type="time"><br>
+		<input type="week"><br>
+
+		<input type="file" name="img" accept="image/jpeg, image/png, image/gif"><br>
+		<input type="image" name="img" src="https://i.pinimg.com/736x/b7/87/a7/b787a73afd3a7bef4d48b49b217d7adb--flat-icons-free-icon.jpg" width="50" alt="Альтернативный текст как в img"><br>
+
+		<p>Сколько вам лет?</p>
+		<p><input type="number" value="0" min="0" max="0" step="1"></p><br>
+
+		<input type="email" placeholder="Ваша почта"><br>
+		<input type="password" minlength="6" maxlength="25" placeholder="Ваш пароль от 6 до 25 символов">
+
+		<p>
+			<label for="id">Введите ФИО</label>
+			<input type="text" id="id" name="id">
+
+			<input type="reset" value="Стереть">
+			<input type="submit" value="Отправить">
+		</p>
+
+		<p>
+			<input type="search" placeholder="Что будем искать?">
+			<input type="button" value="Искать">
+		</p>
+
+		<p>
+			<label for="phone">Телефон: </label>
+			<input type="tel" placeholder="+7(xxx)-xxx-xxxx" id="phone" name="phone" maxlength="16">
+			<input type="submit" value="Отправить">
+			<button type="submit">Тоже отправить</button>
+		</p>
+
+		<p>
+			<label for="volume">Громкость</label>
+			<input type="range" id="volume" name="volume" min="0" maxlength="100">
+		</p>
+
+		<a href="tel:+79169240569">8-916-924-05-69</a>
+
+</form>
+
+		<p align="center"><b>Три вида кнопок</b></p>
+		
+			<form align="center">
+				<input type="button" onclick="window.location.href='https://www.google.com';" value="Google">
+			</form>
+
+			<p align="center">
+			<button type="submit" formaction="https://www.google.com">Жми!</button>
+			</p>
+
+			<form align="center"action="https://www.google.com" target="_blank">
+				<button type="google">Перейти в Гугл</button>
+			</form>
+
+			<!--Форма обратной связи-->
+			<form>
+				<input type="text" name="name"  placeholder="Имя"><br>
+				<input type="email" name="email" placeholder="Емаил"><br>
+				<textarea name="message" rows="10" cols="45" placeholder="Текст сообщения"></textarea><br>
+				<input type="submit" value="Отправить">
+			</form>
+		
+
+
+
+</body>
+</html>
